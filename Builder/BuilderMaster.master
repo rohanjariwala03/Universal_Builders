@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BuilderMaster.master.cs" Inherits="Builder_MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from expert-themes.com/html/ourland/admin/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Jan 2019 05:26:54 GMT -->
+<head>
+<meta charset="utf-8">
+<title>Universal Builders - Real Estate</title>
+<!-- Stylesheets -->
+<link href="cs/bootstrap.css" rel="stylesheet">
+<link href="cs/style.css" rel="stylesheet">
+<link href="cs/responsive.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.png" type="img/x-icon">
+<link rel="icon" href="img/favicon.png" type="img/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+<div class="page-wrapper">
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Header Span -->
+    <%--<span class="header-span"></span>--%>
+
+    <!-- Main Header-->
+    <header class="main-header">
+        <div class="main-box clearfix">
+        	<!-- Logo Box -->
+            <div class="logo-box">
+                <div class="logo"><a href="/Universal%20Builders/Builder/BMyProfile.aspx"><img src="../l4.png" height="100" width="170" alt="" title=""></div>
+            </div>
+
+            <!-- Upper Right-->
+            <div class="upper-right">
+                <ul class="clearfix">
+                    <li class="dropdown option-box">
+
+
+                  
+
+                        <%--<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" >
+                            --%>
+							
+                            <a href="MyProfile.aspx"><asp:Image class="thumb" ID="Image1" runat="server" />  </a> 
+								<span class="user-info">
+                                    <asp:Label ID="lbluser" runat="server" Text="Label"></asp:Label>
+								</span>                 -
+                            
+                             <%--<img src="images/resource/thumb-1.jpg" alt="avatar" class="thumb">--%></a>
+                                           
+                       
+                        
+                       <%-- <div class="dropdown-menu">
+                            <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                            <a class="dropdown-item" href="messages.html">Messages</a>
+                            <a class="dropdown-item" href="bookings.html">Bookings</a>
+                            <a class="dropdown-item" href="my-profile.html">My profile</a>
+                            <a class="dropdown-item" href="../index-2.html">Log out</a>
+                        </div>--%>
+                    <%--</li>--%>
+                    <%--<li class="submit-property">
+                    	<a href="submit-property.html" class="theme-btn btn-style-one">Submit Property <i class="pe-7s-up-arrow"></i></a>
+                    </li>--%>
+                    <li class="nav-toggler">
+                    	<button class="toggler-btn nav-btn"><span class="bar bar-one"></span><span class="bar bar-two"></span><span class="bar bar-three"></span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--End Header Lower-->
+    </header>
+    <!--End Main Header -->
+    
+    <!-- Hidden Bar -->
+
+
+
+
+
+    <section class="hidden-bar">
+        <div class="dashboard-inner">
+        	<div class="cross-icon"><span class="pe-7s-close-circle"></span></div>
+        	<ul class="navigation">
+	           <%-- <li class="active"><a href="dashboard.html"><i class="pe-7s-culture"></i> Dashboard</a></li>--%>
+                <%--<li class="active"><asp:HyperLink ID="HyperLink1" runat="server"><i class="pe-7s-culture"></i>Dashboard</asp:HyperLink></li>--%>
+                <li><a href="Property.aspx"><i class="pe-7s-date"></i>All Property</a></li>
+                <li><a href="AddPropertyBuilder.aspx"><i class="pe-7s-mail"></i>Add Property</a></li>
+	            <li><a href="PropeBookings.aspx"><i class="pe-7s-note2"></i>Property Bookings</a></li>
+                <%--<li><a href="Builder.aspx"><i class="pe-7s-date"></i>View Builders</a></li>
+	            <li><a href="Agent.aspx"><i class="pe-7s-diamond"></i>View Agent</a></li>
+                <li><a href="AddDealers.aspx"><i class="pe-7s-diamond"></i>Add Dealers</a></li>
+                <li><a href="AddBuilders.aspx"><i class="pe-7s-diamond"></i>Add Builders</a></li>
+                <li><a href="ContactUsDetails.aspx"><i class="pe-7s-diamond"></i>ContactUs Details</a></li>--%>
+	            <li><a href="BMyProfile.aspx"><i class="pe-7s-note2"></i>My Profile</a></li>
+	          <%--  <li><a href="favorited-properties.html"><i class="pe-7s-like2"></i>Favorited Properties</a></li>
+	            <li><a href="submit-property.html"><i class="pe-7s-up-arrow"></i>Submit Property</a></li>
+	            <li><a href="my-profile.html"><i class="pe-7s-user"></i>My Profile</a></li>--%>
+	            <li><a href="../User/Login.aspx"><i class="pe-7s-back-2"></i>Logout</a></li>
+	        </ul>
+	    </div>
+    </section>
+    <!--End Hidden Bar -->
+
+
+
+
+
+
+    <div class="dashboard">
+	    <div class="container-fluid">
+	        <div class="content-area">
+	            <div class="dashboard-content">
+	                <div class="dashboard-header clearfix">
+	                    <div class="row">
+	                        <%--<div class="col-md-6 col-sm-12"><h4>Hi , John</h4></div>--%>
+	                        <%--<div class="col-md-6 col-sm-12">
+	                            <div class="breadcrumb-nav">
+	                                <ul>
+	                                    <li><a href="../index-2.html">Index</a></li>
+	                                    <li class="active">Dashboard</li>
+	                                </ul>
+	                            </div>
+	                        </div>--%>
+	                    </div>
+	                </div>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+
+
+
+
+	            <p class="copyright-text">© 2019 <a href="/Universal%20Builders/Builder/BMyProfile.aspx">UNIVERSAL BUILDERS</a> All right reserved.</p>
+	        </div>
+	    </div>
+	</div>
+
+</div>
+    
+<script src="jss/jquery.js"></script> 
+<script src="jss/popper.min.js"></script>
+<script src="jss/bootstrap.min.js"></script>
+<script src="jss/jquery-ui.js"></script>
+<script src="jss/wow.js"></script>
+<script src="jss/dropzone.js"></script>
+<script src="jss/appear.js"></script>
+<script src="jss/script.js"></script>
+    </form>
+</body>
+
+<!-- Mirrored from expert-themes.com/html/ourland/admin/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Jan 2019 05:27:02 GMT -->
+</html>
